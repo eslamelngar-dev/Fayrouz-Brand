@@ -4,6 +4,7 @@ import Categories from "./categories";
 import LatestProducts from "./LatestProducts";
 import Footer from "./Footer";
 
+
 export default function HomePage() {
   return (
     <div>

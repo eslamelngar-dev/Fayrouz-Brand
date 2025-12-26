@@ -1,8 +1,18 @@
 import { Link } from "react-router-dom"
 import products from "../../Data/products"
 import AddToCartBtn from "../../Components/AddToCartBtn"
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 
 export default function LatestProducts() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return(
     <section className="py-5 bg-light">
@@ -13,7 +23,7 @@ export default function LatestProducts() {
       </div>
       <div className="row g-4">{
         products.slice(0,3).map((product, i) => (
-          <div className="col-md-4" key={i}>
+          <div className="col-md-4" key={i} data-aos="fade-up">
             <div className="card h-100 border-0 shadow-sm">
               <Link to={`/products/${product.id}`} className="product-card text-decoration-none">
                 <img

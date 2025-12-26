@@ -1,6 +1,16 @@
 import categories from "../../Data/Categories";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Categories(){
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []); 
+
   return(
     <section className="py-5">
         <div className="container">
@@ -10,7 +20,7 @@ export default function Categories(){
           </div>
           <div className="row g-4">
             {categories.map((cat, i) => (
-              <div className="col-md-4" key={i}>
+              <div className="col-md-4" key={i} data-aos="fade-up">
                 <div className="card border-0 shadow-sm h-100">
                   <img 
                   src={cat.image} 

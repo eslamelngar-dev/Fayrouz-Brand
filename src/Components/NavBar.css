@@ -8,6 +8,7 @@
   display: inline-block;
   width: 45px;
   height: 45px;
+  margin-left: 25px;
 }
 
 .cart-badge {
@@ -40,6 +41,11 @@
 
   .nav-item {
     margin: 0.5rem 0;
+  }
+
+  .cart-link {
+    margin-right: 0 !important;
+    margin-left: auto;
   }
 
   .cart-icon {

@@ -4,8 +4,19 @@ import Footer from "../homePage/Footer";
 import { Link } from "react-router-dom";
 import "./Productpage.css";
 import AddToCartBtn from "../../Components/AddToCartBtn";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 
 export default function ProductsPage() {
+  useEffect(() => {
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+}, []);
+
   return (
     <>
       <main className="page-wrapper">
@@ -18,7 +29,7 @@ export default function ProductsPage() {
             </div>
             <div className="row g-4">
               {products.map((product) => (
-                <div className="col-md-4" key={product.id}>
+                <div className="col-md-4" key={product.id} data-aos="fade-up">
                   <Link to={`/products/${product.id}`} className="text-decoration-none">
                     <div className="product-card card h-100 border-0 shadow-sm">
                       <img

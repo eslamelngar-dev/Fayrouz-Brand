@@ -14,13 +14,13 @@ export default function NavBar() {
       <div className="container">
         <NavLink
           to="/"
-          className="Title text-decoration-none fw-bold fs-3"
-          style={{ color: "green" }}
+          className="Title text-decoration-none fw-bold fs-2"
+          style={{ color: "green"}}
         >
           Fayrouz
         </NavLink>
 
-        <div className="d-flex align-items-center gap-2 gap-lg-3">
+        <div className="d-flex align-items-center gap-2 d-lg-none">
           <Link
             to="/cart"
             className="position-relative text-decoration-none"
@@ -80,6 +80,18 @@ export default function NavBar() {
             </li>
           </ul>
         </div>
+
+        <Link
+          to="/cart"
+          className="position-relative text-decoration-none me-5 d-none d-lg-block"
+        >
+          <Cart3 className="cart-icon" />
+          {totalItems > 0 && (
+            <span className="cart-badge badge rounded-pill bg-danger">
+              {totalItems}
+            </span>
+          )}
+        </Link>
       </div>
     </nav>
   );

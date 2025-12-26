@@ -10,7 +10,7 @@ export default function CartPage() {
   return (
     <>
       <NavBar/>
-      <div className="container py-5" style={{ minHeight: "70vh" }}>
+      <div className="container py-5" style={{ minHeight: "84.5vh" }}>
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h2 className="mb-0">
             <BasketFill className="me-2"/> عربة التسوق
