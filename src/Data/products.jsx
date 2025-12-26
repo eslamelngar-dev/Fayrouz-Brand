@@ -1,10 +1,10 @@
-import p1 from "../assets/images/products/1.jpg";
-import p2 from "../assets/images/products/2.jpg";
-import p3 from "../assets/images/products/3.jpg";
-import p4 from "../assets/images/products/4.jpg";
-import p5 from "../assets/images/products/5.jpg";
-import p6 from "../assets/images/products/6.jpg";
-import p7 from "../assets/images/products/7.jpg";
+import p1 from "../assets/Images/products/1.jpg";
+import p2 from "../assets/Images/products/2.jpg";
+import p3 from "../assets/Images/products/3.jpg";
+import p4 from "../assets/Images/products/4.jpg";
+import p5 from "../assets/Images/products/5.jpg";
+import p6 from "../assets/Images/products/6.jpg";
+import p7 from "../assets/Images/products/7.jpg";
 
 const products = [
   {
