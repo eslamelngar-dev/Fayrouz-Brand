@@ -1,0 +1,72 @@
+.contact-section {
+  height: 84.6vh;
+  background-image: url("./contact-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(248, 249, 250, 0.5);
+  z-index: 0;
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.social {
+  border: none;
+  font-size: 4.5rem;
+}
+.instagram {
+  padding: 8px;
+  border-radius: 31%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
+  color: white;
+  transition: all 0.6s ease;
+}
+.instagram:hover {
+  background: linear-gradient(
+    #3850cb,
+    #4943b7,
+    #833ab4,
+    #9f2b6d,
+    #c52a5e,
+    #e11919,
+    #e1593b,
+    #e36d32,
+    #e39e3d,
+    #e2c271
+  );
+}
+.facebook {
+  padding: 0;
+  color: #1877f2;
+  transition: all 0.6s ease;
+}
+.facebook:hover {
+  color: #1364cd;
+}

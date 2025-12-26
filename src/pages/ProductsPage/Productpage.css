@@ -1,0 +1,41 @@
+.product-section {
+  height: 84.6vh;
+  background-image: url("./background.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.product-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(248, 249, 250, 0.5);
+  z-index: 0;
+}
+
+.product-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-content {
+  flex: 1;
+}
+
+.product-card {
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+.product-card:hover {
+  transform: scale(1.03);
+}

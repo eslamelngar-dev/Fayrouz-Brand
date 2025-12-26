@@ -1,0 +1,4 @@
+## libraries:-
+
+font-awesome
+bootstrap
