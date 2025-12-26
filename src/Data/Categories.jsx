@@ -1,6 +1,6 @@
-import menImg from "../assets/images/categories/men-clothes-section.jpg";
-import womenImg from "../assets/images/categories/women-clothes-section.jpg";
-import accImg from "../assets/images/categories/accessories-section.jpg";
+import menImg from "../assets/Images/categories/men-clothes-section.jpg";
+import womenImg from "../assets/Images/categories/women-clothes-section.jpg";
+import accImg from "../assets/Images/categories/accessories-section.jpg";
 
 const categories = [
   {
