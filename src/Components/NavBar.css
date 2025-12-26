@@ -17,3 +17,36 @@
   transform: translate(50%, -50%);
   font-size: 0.7rem;
 }
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: none !important;
+}
+
+/* تحسين مظهر القائمة على الموبايل */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    margin-top: 1rem;
+    border-top: 1px solid #dee2e6;
+    padding-top: 1rem;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+  
+  .cart-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+}
